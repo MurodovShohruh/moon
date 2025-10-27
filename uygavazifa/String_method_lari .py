@@ -45,13 +45,12 @@
 
 #  emphasise_words.py
 
+natija = []
+matn=input("matn = ")
 def katta_harif():
-    matn=input("matn = ")
     sozlar = matn.split()
-    natija = []
     for soz in sozlar:
         if len(soz) > 0:
             natija.append(soz[0].upper() + soz[1:].lower())
-    # print(natija)
     return " ".join(natija)
 print(katta_harif())
